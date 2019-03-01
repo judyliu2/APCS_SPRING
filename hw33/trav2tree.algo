@@ -1,0 +1,6 @@
+Judy Liu
+APCS2 pd5
+HW33 - A Tree Grows in 251
+2017-04-26
+
+When reconstructing a binary tree given its transverlsals, the minimum information needed to perform this task its pre/in/post-orders. Given that a case gives the transversals in its pre-order and in-order, the root of the tree is found at the first element of the pre-order. From that, locate the root in the in-order, in order find the left and right subtrees of the root. Repeat these steps for the subtrees until a tree with all of its transverals is constructed. In case for where the pre and post orders are only given, the first element in the pre-order is the root or the last element in the post-order is the root. By looking at teh element next to the root in pre-order, you can figure out what root is left of the root. The element next to the root in post-oder is the root of the subtree to the right of the root. These steps can be continued to solve for a possible tree. Lastly, the construction of a binary tree from post and in-orders could be made by locating the root of the main tree which is at the end of the post-orderlist. After that find the placement of the root in  the in-order list. The elements to the left of it is the left subtree and the element to its right is the right subtree of the main root. Continue these steps for the subtrees until the tree is constructed.

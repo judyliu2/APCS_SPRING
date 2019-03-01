@@ -1,0 +1,23 @@
+Judy Liu
+APCS2 pd5
+HW11: Probing the Depths
+2017-03-01
+
+
+Execution Times
+  n=5   .112s    over 5 executions 
+  n=6   .119s    over 5 executions
+  n=7   .383s    over 5 executions
+  n=8   .198s    over 5 executions
+  
+Section I:
+QI: From any starting position, can an open tour always be found?
+From any starting position open tours cannot always be found because depending on the starting position, there may or may not be any solutions. This can be seen when you run test cases with randomized starting positions.
+Q2: Same, but for closed tours.
+As with the previous question, closed tours always be found because depending on the starting position, there may or may not be any solutions.
+Q3: How do you explain the increase in execution time as n increases?
+As n inceases, the execution time increases as well. The execution time for odd numbers are greater than even numbers in most cases. (When the even number is the number the previous to the odd number)
+Q4: Thoughts on opitimization.
+This method can be optimized when you text only 1 quadrant in a given board because of the rotational properties of the board.
+Section 2:
+This algorithm is going to be similar as the knight tour algorithm. Instead of moving in the path of the knight, you can only move left, right, up, and down by 1 block. As you move, you mark the tiles that you touch. If you cannot move in any direction but backwards you move back while marking the tiles. Continue doing this until you reach the end tile.
